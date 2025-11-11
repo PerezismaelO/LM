@@ -8,8 +8,51 @@
 <body>
     <h1>Ejemplo inicial formulario</h1>
 
-    <form action="http:/midominio.com/altas" method="post">
+    <form action="http:/midominio.com/altas" method="get" enctype="multipart/form-data">
 
+
+        <p>
+            <label for="provincia">Seleccione provincia <br> </label>
+                <select name="provincia" id="provincia">
+                     <option value="Ninguna">Ninguna</option>
+                    <option value="CA">Cádiz</option>
+                    <option value="Se">Sevilla</option>
+                    <option value="HU">Huelva</option>
+                    <option value="CO">Córdoba</option>
+                </select>
+        </p>
+        <p>
+            <label>Texto de su queja: <br>
+                <input type="text" name="queja" size="80" minlength="20" maxlength="72"></label>
+        </p>
+
+        <p>
+            <label>Detalle su queja <br>
+                <textarea name="miqueja" cols="30"></textarea></label>
+        </p>
+
+
+        <p>
+            <label for="micolor">Seleccione color</label> <br>
+            <input type="color" name="micolor" id="micolor">
+        </p>
+        <p> Seleccione sus preferncias <br>
+            <label><input type="checkbox" name="preferencias" value="C">Cine</label>
+             <label><input type="checkbox" name="preferencias" value="T">Teatro</label>
+              <label><input type="checkbox"name="preferencias" value="V">Viajes</label>
+        </p>
+
+        <p> Seleccione su módulo preferido <br>
+            <label><input type="radio" name="modulo" value="LM">Lenguaje de marcas</label> <br>
+            <label><input type="radio" name="modulo" value="S">Sistemas</label> <br>
+            <label><input type="radio" name="modulo" value="Prog">Programación</label> <br>
+            <label><input type="radio" name="modulo" value="B">Base de datos</label>
+        </p>
+        <p>
+            <label> Factura de compra <br>
+                <input type="file" name="factura">
+            </label>
+        </p>
         <p>
             <label for="Usuario">Nombre del usuario</label> <br>
             <input type="text" name="usuario" id="Usuario">
@@ -22,12 +65,12 @@
 
         <p>
             <label>Fecha compra <br>
-                <input type="date" name="fcompra">
+                <input type="date" name="fcompra" required>
             </label>
         </p>
         <p>
             <label>Correo electrónico <br>
-                <input type="email" name="correo">
+                <input type="email" name="correo" placeholder="use su email personal">
             </label>
         </p>
 
