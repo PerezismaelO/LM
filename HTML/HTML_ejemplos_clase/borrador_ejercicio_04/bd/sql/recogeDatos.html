@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recoge Datos</title>
+</head>
+<body>
+
+
+
+<nav>
+    <h2>Recorra nuestro sitio web</h2>
+        <ul>
+            <li> <a href="../../index.html">Página inicial</a></li>
+            <li> <a href="recogeDatos.html">Recogida de datos</a></li>
+            <li> <a href="../resultados.html">Tabla de resultados</a></li>
+            <li> <a href="../../blog/blog.html">Nuestro blog</a> </li>
+        </ul>
+</nav>
+
+<form action="/procesa/altas.php" method="post" enctype="multipart/form-data">
+
+    <fieldset>
+        <legend>Datos compra</legend>
+
+        <p>Selecciona marca <br>
+            <label><input type="radio" name="marca" value="A">Marca A</label> 
+            <label><input type="radio" name="marca" value="B">Marca B</label>
+            <label><input type="radio" name="marca" value="C">Marca C</label>
+            <label><input type="radio" name="marca" value="D">Marca D</label>  
+        </p>
+        <p>
+            <label>Número de unidades 
+                <input type="number" name="unidades" value="2" max="3000" min="1" step="any">
+            </label>
+        </p>
+        <p>
+            <label for="ficheros">DNI y Factura</label>
+            <input type="file" name="ficheros" id="ficheros" multiple>
+        </p>
+
+        <p>
+            <label> Fecha Compra <br>
+                <input type="date" name="fechacompra">
+            </label>
+        </p>
+
+
+    </fieldset>
+    <fieldset>
+        <legend>Datos personales</legend>
+
+        <p>
+            <label>Usuario<input type="email" name="correo" placeholder="Correo Electrónico"></label>
+        </p>
+        <p>
+            <label>Código: <input type="text" name="codigo" required></label>
+        </p>
+
+
+    </fieldset>
+
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Borrar">
+</form>
+    
+</body>
+</html>

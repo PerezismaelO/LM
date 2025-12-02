@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de resultados</title>
+</head>
+<body>
+
+<nav>
+    <h2>Recorra nuestro sitio web</h2>
+        <ul>
+            <li> <a href="../index.html">Página inicial</a></li>
+            <li> <a href="sql/recogeDatos.html">Recogida de datos</a></li>
+            <li> <a href="resultados.html">Tabla de resultados</a></li>
+            <li> <a href="../blog/blog.html">Nuestro blog</a> </li>
+        </ul>
+</nav>
+
+<h1>Ejemplo de tabla HTML</h1>
+
+<p>En primer lugar observe <strong>la siguiente figura:</strong></p>
+
+<figure>
+    <img src="/figuras/tabla-examen-html.png" alt="resultados del módulo" width="434" height="124">
+</figure>
+
+<p>Ahora codifique una tabla HTML que represente la información de la figura anterior. Le recordamos que lo importante es la semántica, no la presentación.</p>
+
+<p><strong>Aviso</strong>: Aquí debe aparecer su tabla HTML.</p>
+
+<table border="1">
+    <caption>Resultados módulo</caption>
+    <!-- tr>th*5[scope="col"]>lorem2 -->
+     <tr>
+        <th scope="col">Examen</th>
+        <th scope="col">Quidem, repellat.</th>
+        <th scope="col">Quibusdam, quisquam!</th>
+        <th scope="col">Eligendi, error?</th>
+        <th scope="col">Saepe, vitae.</th>
+     </tr>
+     <tr>
+        <th scope="row">1º EV</th>
+        <td colspan="2">Lorem, ipsum.</td>
+        <!-- <td>Aspernatur, sed!</td> -->
+        <td>Sunt, sint?</td>
+        <td>Inventore, magnam.</td>
+     </tr>
+     <tr>
+        <th scope="row">2º EV</th>
+        <td rowspan="2">Lorem.</td>
+        <td>Veritatis!</td>
+        <td>Laboriosam!</td>
+        <td>Quod.</td>
+     </tr>
+    <tr>
+        <th scope="row">3º EV</th>
+        <!-- <td>Lorem.</td> -->
+        <td colspan="2" rowspan="2"">Veritatis!</td>
+        <!-- <td>Laboriosam!</td> -->
+        <td>Quod.</td>
+     </tr>
+    <tr>
+        <th scope="row">Final</th>
+        <td>Lorem.</td>
+        <td>Veritatis!</td>
+        <!-- <td>Laboriosam!</td>
+        <td>Quod.</td> -->
+     </tr>
+</table>
+    
+</body>
+</html>
