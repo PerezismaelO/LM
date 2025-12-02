@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cap 08: Formularios</title>
+</head>
+<body>
+    <h1>Ejemplo inicial formulario</h1>
+    <!--<form action="http:/midominio.com/altas" method="post" enctype="multipart/form-data">-->
+    <form action="http:/midominio.com/altas" method="get" enctype="multipart/form-data">
+
+        <p>
+            <label for="micolor">  Seleccione su color</label>
+            <input type="color" name="micolor" id="micolor">
+        </p>
+
+        <p>
+            <label>Texto de su queja: <br>
+                <input type="text" name="queja" size="80" minlength="20" maxlength="40">
+            </label>
+        </p>
+        <p>
+            <label>Texto de su queja: <br>
+                <textarea name="miqueja" cols="72" rows="12">Rellene con su get</textarea>
+            </label>
+        </p>
+        <p>
+            <label>Seleccione provincia<br>
+                <select name="provincia">
+                    <option selected disabled>Seleccionar</option>
+                    <option value="CA">Cádiz</option>
+                    <option value="SE">Sevilla</option>
+                    <option value="CO">Córdoba</option>
+                    <option value="HU">Huelva</option>
+                    <option value="MA">Málaga</option>
+                </select>
+            </label>
+        </p>
+
+        <fieldset>
+            <legend>Seleccion</legend>
+            <p> Seleccione sus preferencias
+                <label><input type="checkbox" name="preferencias"value="C">Cine</label>
+                <label><input type="checkbox" name="preferencias"value="T"checked>Teatro</label>
+                <label><input type="checkbox" name="preferencias"value="V">Viajes</label>
+            </p>
+            <p> Seleccione su modulo favorito:
+                <label><input type="radio" name="modulo" value="LMSGI">Lenguaje de Marcas</label>
+                <label><input type="radio" name="modulo" value="SI">Sistemas</label>
+                <label><input type="radio" name="modulo" value="BD">Base de Datos</label>
+            </p>
+        </fieldset>
+
+        <p>
+            <label>
+                Factura de compra: <input type="file" name="Factura"><br>
+            </label>
+        </p>
+        <p>
+            <label for="usuario">Nombre de Usuario</label><br>
+            <input type="text" name="usuario" id="usuario">
+        </p>
+        <p>
+            <label for="misunidades">Numero de unidades</label><br>
+            <input type="number" name="unidades" id="misunidades" value="1" min="0" max="1000" step="ANY">
+        </p>
+        <p>
+            <label for="clave">Introduzca la clave</label><br>
+            <input type="password" name="clave" id="clave">
+        </p>
+        <p>
+            <label>Fecha de compra<br><input type="date" name="fecha"required=""></label>
+        </p>
+        <p>
+            <label>Correo Electronico<br><input type="email" name="correo" placeholder="usa tu correo personal"></label>
+        </p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpiar">
+    </form>
+</body>
+</html>

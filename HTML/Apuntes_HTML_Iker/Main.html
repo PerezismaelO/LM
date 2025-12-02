@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apuntes Iker HTML </title>
+</head>
+<body>
+    <h1>Página Principal.</h1>
+    <p>Apuntes Globales de todo HTML: </p>
+    <nav>
+        <ol>
+            <li>UD 1: Introducción
+                <ol>
+                    <li>Etiquetas, contenido y atributos HTML</li>
+                </ol>
+            </li>
+            <li><a href="#etiquetas">UD 2: Etiquetas</a>
+                <ol>
+                    <li>Estructurar
+                        <ul>
+                            <li>Parrafos</li>
+                            <li>Apartados (h1,h2...)</li>
+                            <li>Estructura de la página (header, footer, aside, section...)</li>
+                        </ul>
+                    </li>
+                    <li>Texto
+                        <ul>
+                            <li>em, strong, ins/del, blockquote/cite, abbr/dfn/accronym,code</li>
+                        </ul>
+                    </li>
+                   <li>Genérico
+                        <ul>
+                            <li> span / div</li>
+                            <li> atributos id y class</li>
+                        </ul>
+                    </li>
+                    <li>Espacios en blanco
+                        <ul>
+                            <li>"Colapsar"</li>
+                            <li>br y & nbsp</li>
+                            <li>pre</li>
+                        </ul>
+                    </li>
+                    <li>Codificación
+                        <ul>
+                            <li> Entidades</li>
+                            <li> Códificación</li>
+                        </ul>
+        
+                </ol>
+            </li>
+            <li><a href="#enlaces">UD 3: Enlaces</a>
+                <ol>
+                    <li>Formato URL:
+                        <ul>
+                            <li>Protocolo (http)</li>
+                            <li>Servidor</li>
+                            <li>Ruta</li>
+                            <li>Otros: <strong>Apartado #</strong> y <strong>query ?</strong> </li>
+                        </ul>
+                    </li>
+                    <li><a href="#tipos">Tipos:</a>
+                        <ul>
+                            <li>Absolutos</li>
+                            <li>Relativos</li>
+                        </ul>
+                    </li>
+                    <li>Elementos <code>&lta href=""></code></li>
+                </ol>
+            </li>
+            <li><a href="#listas">UD 4: Listas</a>
+                <ol>
+                    <li>Tipos
+                        <ul>
+                            <li>Ordenadas</li>
+                            <li>No ordenadas</li>
+                            <li>De Descripciones</li>
+                        </ul>
+                    </li>
+                    <li>Anidación correcta</li>
+                    <li>Lista de enlaces (Barra de navegación)</li>
+                </ol>
+            </li>
+            <li><a href="#imagenes">UD 5: Imágenes</a>
+                <ol>
+                    <li>Imagen: sus 4 Atributos</li>
+                    <li>Imagen con enlace</li>
+                </ol>
+            </li>
+            <li><a href="#tablas">UD 6: Tablas</a>
+                <ol>
+                    <li>Crear tabla: table, tr, td, caption</li>
+                    <li>th y atributo scope</li>
+                    <li>Combinaciones:
+                        <ul><li>Colspan</li><li>Rowspan</li></ul>
+                    </li>
+                    <li>thead, tbody, tfoot</li>
+                </ol>
+            </li>
+            <li><a href="#formularios">UD 7: Formularios</a>
+                <ol>
+                    <li>Form y sus atributos</li>
+                    <li>Tipos de inputs: text, password</li>
+                    <li>Otros tipos de inputs: Select y </li>
+                    <li>Radiobutton y chechbox</li>
+                    <li>Get y Post</li>
+                </ol>
+            </li>
+        </ol>
+    </nav>
+    <img src="Indice.png" width="637" height="896" alt="Indice vista imagen">
+    <section id="etiquetas">
+        <h2>UD: 02 Etiquetas</h2>
+        <p>En Html hay muchisimas etiquetas, y ya las mayoria se aprenden de trabajar mucho con ellas. Sin embargo, siempre hay algunas etiquetas mas peculiares que se nos pueden olvidar, estas las dividiremos en: </p>
+        <p>Etiquetas de espacios en blanco (?)
+            <dl>
+                <dt>br</dt>
+                <dd>Solo se usa en formularios, es un salto de linea</dd>
+                <dt>&lt;nbsp></dt>
+                <dd>Es un campo de espacio en blanco</dd>
+            </dl>
+        </p>
+        <h3> TABLA REPASO CARACTERES RAROS: </h3>
+        <img src="Tabla_Entidad_Caracter.png" width="567" height="255" alt="tabla entidad caracter">
+        <p>Etiquetas de texto:
+            <dl>
+                <dt><code>&lt;em>&lt;/em></code></dt>
+                <dd>Sirve para dar enfasis al texto</dd>
+                <dt><code>&lt;strong&lt;/strong></code></dt>
+                <dd>Pone como fuerte el texto</dd>
+                <dt><code>&lt;ins>&lt;/ins></code>o <code>&lt;del>&lt;/del></code></dt>
+                <dd>ins es para marcar el texto nuevo añadido y del para indicar texto que ha sido borrado/eliminado</dd>
+                <dt><code>&lt;blockquote>&lt;/blockquote></code> y <code>&lt;cite>&lt;/cite></code></dt>
+                <dd>cite se le asigna al autor que dice una frase y blockquote a la frase que dice</dd>
+                <dt><code>&lt;abbr>&lt;/abbr></code>, <code>&lt;dfn>&lt;/dfn></code> y <code>&lt;accronym>&lt;/accronym></code></dt>
+                <dd>abbr es para indicar abreviaturas, dfn para indicar una definicion, y accronym para indicar un acronimo</dd>
+                <dt><code>&lt;code>&lt;/code></code></dt>
+                <dd>Sirve para indicar que es codigo</dd>
+            </dl>
+        Ej: cite y blockquote:
+        </p>
+        <cite>Iker</cite> dijo: <blockquote>Mas vale pajaro en mano que.... cientos volando</blockquote> 
+        <p>A día de hoy, las páginas web que contienen mucho contenido, se estructuran de la siguiente manera: <img src="estructura_HTML_ahora.png" width="579" height="329" alt="estructura actual html"></p>
+    </section>
+    <section>
+        <h2 id="enlaces">UD 3: Enlaces</h2>
+        <p>WEB DE EJEMPLO: http://www.ejemplo.com/ruta1/ruta2/ruta3/pagina1.html</p>
+        <p id="tipos">
+            El formato de la URL Que siguen los enlaces son: Protocolo (http), Servidor (opcional), la Ruta (el dominio), Otros: Apartado # y query ?
+            <p>Enlace absoluto: <a href="AtributosImportantes.html">AtributosImportantes</a></p>
+            <p>Enlace relativo: <a href="./AtributosImportantes.html">AtributosImportantes</a></p>
+        </p>
+    </section>
+    <section>
+        <h2 id="listas">UD 4: Listas</h2>
+        <p>Ejemplo de lista ordenada:
+            <ol>
+                <li>Las listas ordenadas se crean con &lt;ol>&lt;/ol></li>
+                <li>Dentro de las listas ordenadas solo pueden ir &lt;li>&lt;/li></li>
+            </ol>
+        </p>
+        <p>Ejemplo de lista sin ordenar:
+            <ul>
+                <li>Las listas sin ordenar se creal con &lt;ul>&lt;ul></li>
+                <li>Dentro de las listas sin ordenar solo pueden ir &lt;li>&lt;/li></li>
+            </ul>
+        </p>
+        <p>Ejemplo de lista de definiciones:
+            <dl>
+                <dt>Definicion1</dt>
+                <dd>Se crea la lista de definiciones con la etiqueta &lt;dl>&lt;/dl></dd>
+                <dt>Definicion2</dt>
+                <dd>Se añaden las definiciones con &lt;dt>&lt;/dt></dd>
+                <dt>Definicion3</dt>
+                <dd>Y se añaden las descripciones de las deficiones con &lt;dd>&lt;/dd></dd>
+            </dl>
+        </p>
+        <h3> Anidación Correcta:</h3>
+        <p>MUY IMPORTANTE: <strong>DENTRO DE UN &lt;UL> o &lt;OL> SOLO VAN &lt;li></strong></p>
+        <h3> Lista de enlaces (Barra de navegacion)</h3>
+        <p>Si quisieramos crear una lista de enlaces, como por ejemplo una barra de navegación, tendríamos solo que envolver lo de dentro de los atributos &lt;li> con el atajo Cntrl Alt W en un <code>&lt;a href=""></code></p>
+        <p>Un ejemplo de esto sería: 
+            <ul>
+                <li><a href="https://google.com">Redes:</a></li>
+                <li><a href="https://ejemplo.com">Contacto:</a></li>
+                <li><a href="AtributosImportantes.html">Volver a inicio</a></li>
+            </ul>
+        </p>
+    </section>
+    <section>
+        <h2 id="imagenes">UD 5: Imágenes</h2>
+        <p>Para añadir una imagen a nuestra página, usaremos la etiqueta &lt;img> y esta tendrá que contener los siguientes atributos: <strong>src="", width, height y alt=""</strong></p>
+        <p>Ejemplo: <img src="HombreLupa.jpg" width="225" height="225" alt="Imagen de ejemplo" ></p>
+        <p>Para poner una imagen con enlace, se crea la imagen igual que anteriormente y lo envolvemos con Cntrl Alt W en un a href="" a la pagina donde queremos que rediriga: </p>
+        <a href="https://google.com"><img src="HombreLupa.jpg" width="225" height="225" alt="Imagen con enlace"></a>
+        <p>Por defecto, en las imagenes con enlaces la propiedad target es target="_self", que muestra el contenido en la misma ventana. Las otras alternativas son target="_blank" y target="nombre" pero eso dudo que caiga en examen.</p>
+    </section>
+    <section>
+        <h2 id="tablas">UD 6: Tablas</h2>
+        <p>Para crear tablas hay varias formas, se puede crear con tr,td o con thead, tbody y tfoot. En este caso, Crearemos una tabla de ejemplo de tamaño 4 de alto y 3 de ancho de la forma fácil:
+            Cada &lt;tr> Será una nueva fila (alto), y cada &lt;td> será una nueva columna (ancho).
+            <table border="1">
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>12</td>
+                </tr>
+            </table>
+            <p>Si quisieramos ponerle título a la tabla, usaríamos la etiqueta <code>&lt;caption>&lt;/caption></code></p>
+            Si quisieramos combinar alguna celda: Hay 2 Opciones, 1 -> Combinar celdas de la misma fila: <code>colspan</code> 2 -> Combinar celda de la misma columna: <code>rowspan</code>
+        </p>
+        <p>En el siguiente ejemplo, combinaremos la posicion 1 con la posicion 4 mediante rowspan y combinaremos la celda 8 con la 9 mediante colspan.</p>
+        <p>
+        Ejemplo en otra tabla de 4x3:
+            <table border="1";>
+                <caption>Tabla2</caption>
+                <tr>
+                    <td rowspan="2">1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <!-- <td>4</td> -->
+                    <td>5</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td colspan="2">8</td>
+                    <!-- <td>9</td> -->
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>12</td>
+                </tr>
+            </table>
+        </p>
+        <p>Ahora, si quisieramos crear una tabla usando los elementos <strong>thead, tbody, tfoot</strong></p>
+        <p> además, <strong>td se usaria para los datos normales y para los datos del thead th</strong>. SIEMPRE QUE SE PONE th se pone colspan, indicando si es una fila o una columna <strong>(Si el encabezado es una fila col y si es una columna row)</strong>. Lo hariamos con la siguiente estructura:
+            <table border="1">
+                <caption>Ejemplo de Tabla Avanzada: El Titulo es la fila 1</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Titulo 1</th>
+                        <th scope="col">Titulo 2</th>
+                        <th scope="col">Titulo 3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                   <tr>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <table border="1">
+                <caption>Ejemplo de Tabla Avanzada: El Titulo es la Columna 1</caption>
+                <thead>
+                    <tr>
+                    <th scope="row">Titulo 1</th>
+                    <td>1</td>
+                    <td>2</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Titulo 2</th>
+                        <td>3</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Titulo 3</th>
+                        <td>5</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Titulo 4</th>
+                        <td>7</td>
+                        <td>8</td>
+                    </tr>
+                </tbody>
+            </table>
+        </p>
+    </section>
+    <section>
+        <h2 id="formularios">UD 7: Formularios</h2>
+        <p>Los formularios se crean de la siguiente forma:</p>
+        <pre>&lt;form action="http://midominio.com/altas" method="post" enctype="multipart/form-data">&lt;/form></pre>
+        <p>Según lo que tenemos, vemos que form contiene un <strong>action</strong> donde está el receptor de los datos que le vamos a pasar</p>
+        <p>el method que puede ser get o post, get es el que tiene por defecto y el que usamos siempre, a no ser que el formulario <strong>contenga archivos o información privada como contraseñas</strong>, entonces cambiamos el metodo get por el metodo <strong>post</strong>.</p>
+        <p> enctype solo se pondría si en el formulario enviamos archivos</p>
+        <h3>Tipos de Input</h3>
+        <p>Existen <strong>muchos</strong> tipos de inputs, estos pueden ser:
+        <table border="1">
+            <caption>Tipos de Atributo y sus posibles valores</caption>
+            <tr>
+                <td>Tipo</td>
+                <td>Valores <strong>Mínimos</strong></td>
+                <td>Ejemplo:</td>
+            </tr>
+            <tr>
+                <td>input:text</td>
+                <td>type="text", name="", value=""</td>
+                <td>&lt;input type="text" name="nombre" value=""></td>
+            </tr>
+            <tr>
+                <td>input:password</td>
+                <td>type="password", name="", value=""</td>
+                <td>&lt;input type="password" name="contrasena" value=""></td>
+            </tr>
+            <tr>
+                <td>input:checkbox</td>
+                <td>type="checkbox", name="" value=""></td>
+                <td>&lt;input type="checkbox" name="puesto_capitan" value="capitan">Capitan<br/>&lt;input type="checkbox" name="puesto_trabajador" value="trabajador">Trabajador</td>
+            </tr>
+            <tr>
+                <td>input:radio</td>
+                <td>type="radio" name="", value=""</td>
+                <td>&lt;input type="radio" name="sexo" value="hombre">Hombre<br/>&lt;input type="radio" name="sexo" value="mujer">Mujer</td>
+            </tr>
+            <tr>
+                <td>input:submit</td>
+                <td>type="submit", name="", value=""</td>
+                <td>&lt;input type="submit", name="Enviar", value="Enviar"></td>
+            </tr>
+            <tr>
+                <td>input:reset</td>
+                <td>type="reset", name="", value=""</td>
+                <td>&lt;input type="reset", name="Limpiar", value="Limpiar"></td>
+            </tr>
+            <tr>
+                <td>input:file</td>
+                <td>type="file", name=""</td>
+                <td>&lt;input type="file" name="documento"></td>
+            </tr>
+            <tr>
+                <td>input:hidden</td>
+                <td>type="hidden", name="", value=""</td>
+                <td>&lt;input type="hidden" name="loquesea" value=""></td>
+            </tr>
+            <tr>
+                <td>input:image</td>
+                <td>type="image", name="", src=""</td>
+                <td>&lt;input type="image" name="enviar" src="foto.png"></td>
+            </tr>
+            <tr>
+                <td>input:button</td>
+                <td>type="button", name="", src=""</td>
+                <td>&lt;input type="button" name="guardar" value="Guardar Cambios"></td>
+            </tr>
+            <tr>
+                <td>input:color</td>
+                <td>type="color", name="", value="" </td>
+                <td>&lt;input type="color" name="color" value=""</td>
+            </tr>
+            <tr>
+                <td>textarea</td>
+                <td>textarea name=""</td>
+                <td>&lt;textarea name="Parrafo">&lt;/textarea></td>
+            </tr>
+            <tr>
+                <td>select</td>
+                <td>select name=""</td>
+                <td>&lt;select name="provincias">&lt;option selected value="ca"> Cádiz&lt;/option>&lt;/selected></td>
+            </tr>
+        </table>
+        <h3> Caracteristicas Importantes pero opcionales de los atributos:</h3>
+        <p> size="" cambia el tamaño del cuadrao del input.<br/>
+            maxlength="" indica el max de caracteres <br/>
+            minlength="" indica el min de caracteres <br/>
+            checked="checked" para los radio y los checkbox indicar que te venga ya seleccionao. <br/>
+            disabled="disabled" para que no se envie el valor y se desactive.<br/>
+            rows="" o cols="" para indicar las columnas y filas que muestra un textarea<br/>
+            required="" campo obligatorio de rellenar;
+            placeholder="" te pone una previsualizacion dentro de la caja de texto;
+        </p>
+        <h3> Formularios: Comodines</h3>
+        <p>Refuerza los conocimientos con estas páginas:
+        <a href="./RefuerzosFormulario/prueba.html">Archivo 1</a>
+        <a href="./RefuerzosFormulario/formulario-html5.html">Archivo 2</a>
+        </p>
+        <h3>Formularios Avanzados: Fieldset y legend</h3>
+        <p>Los formularios se pueden hacer mediante Fieldset y Legend, lo que son en realidad agrupaciones de las entradas del formulario, por ejemplo: </p>
+        <p>Revisar tambien que están incluidos aquí los 2 tipos de label:</p>
+        <form action="http://midominio.com/altas" method="post" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Datos personales</legend>
+                <label for="nom">Nombre <br/></label>
+                <input type="text" name="nombre" value="" id="nom"/>
+                <br/>
+                <label for="ape">Apellidos <br/></label>
+                <input type="text" name="apellidos" value="" id="ape"/>
+                <br/>
+                <label for="dni">DNI<br/></label>
+                <input type="text" name="dni" value="" size="10" maxlength="9" id="dni" />
+            </fieldset>
+            <fieldset>
+            <legend>Seleccion</legend>
+            <p> Seleccione sus preferencias
+                <label><input type="checkbox" name="preferencias"value="C">Cine</label>
+                <label><input type="checkbox" name="preferencias"value="T"checked>Teatro</label>
+                <label><input type="checkbox" name="preferencias"value="V">Viajes</label>
+            </p>
+            <p> Seleccione su modulo favorito:
+                <label><input type="radio" name="modulo" value="LMSGI">Lenguaje de Marcas</label>
+                <label><input type="radio" name="modulo" value="SI">Sistemas</label>
+                <label><input type="radio" name="modulo" value="BD">Base de Datos</label>
+            </p>
+        </fieldset>
+        </form>
+    </section>
+</body>
+</html>
