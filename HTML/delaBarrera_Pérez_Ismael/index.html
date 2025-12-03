@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen</title>
+</head>
+<body>
+    <nav>
+    <h2>Zona de navegación de nuesta web.</h2>
+    <ul>
+      <li><a href="">Página inicial</a></li>
+      <li><a href="">Curso BootStrap</a></li>
+      <li><a href="">Horarios</a> </li>
+    </ul>
+  </nav>
+    <h1>Prueba HTML: El formulario</h1>
+    <fieldset>
+        <legend>Datos Usuario</legend>
+        <form action="/formulario" method="get">
+        
+            <label for="Email">Email</label> 
+            <br>
+            <input type="email" id="Email" name="Email" placeholder="Email">
+            <hr>
+            <label for="Clave">Clave</label>
+            <br>
+            <input type="password" name="Clave" id="Clave">
+            <hr>
+            <label for="Url">Url de la pagina web de su empresa</label> 
+            <br>
+            <input type="url" name="Url" id="Url" placeholder="https://suempresa.com">
+
+
+            <legend>Compras</legend>
+    <form action="/formulario" method="get">
+        <p>
+            Nº de cursos a realizar
+            <br>
+            <input type="number" name="number" id="number" min="1" max="4" step="1" value="1">
+        </p>
+
+        <p>
+            Indique el Formato preferido del material <br>
+            <label><input type="radio" name="tipo" value="Formato PDF" checked>Formato PDF</label> <br>
+            <label><input type="radio" name="tipo" value="Formato ebook.epub">Formato ebook.epub</label> <br>
+            <label><input type="radio" name="tipo" value="Formato web: html por defecto">Formato web: html por defecto</label>
+        </p>
+        </form>
+    <fieldset>
+</body>
+</html>
