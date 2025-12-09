@@ -4,6 +4,15 @@
 abbr[title] {
     background-color: red;
 }
+[title="pendiente"]  {
+    background-color: lightblue;
+}
+[title*="pendiente"]  {
+    background-color: lightpink;
+}
+[href$=".pdf"]  {
+    background-color: beige;
+}
 
 /* sibling */
 h3 ~ h4 {
@@ -26,7 +35,9 @@ article h2 {
 /* hijo */
 article p {
     color: red;
+    text-align: center;
 }
 article p {
     color: blue;
+    text-align: justify;
 }
