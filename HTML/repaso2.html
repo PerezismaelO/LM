@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Formulario</h1>
+    <ul>
+        <li><a href="Repaso.html">Repaso HTML</a></li>
+        <li><a href="primerapractica.html">Primera practica</a></li>
+    </ul>
+    <fieldset>
+        <legend>Formulario</legend>
+        <form>
+            <p><label for="nombre">Nombre: <input type="text" id="nombre">
+            </label></p>
+            <p><label for="apellidos">Apellidos: <input type="text" id="apellidos">
+            </label></p>
+            <p><label for="email">Email: <input type="email" id="email">
+            </label></p>
+            <p><label for="observación">Observación: <br> <textarea id="observación"></textarea>
+            </label></p>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </fieldset>
+    <fieldset>
+        <legend>Formulario2</legend>
+        <form>
+            <p><label> Estatura:
+                <select name="Estatura" id="Estatura">
+                    <option value="1,50">1,50</option>
+                    <option value="1,60">1,60</option>
+                    <option value="1,70" selected>1,70</option>
+                    <option value="1,80" disabled>1,80</option>
+                    <!--selected: aparece seleccionado por defecto
+                    disabled: no se puede seleccionar-->
+                </select>
+                <p><b>Color de ojos</b></p> <!--b=negrita-->
+                <input type="radio" value="Negro">
+                <label>Negro</label> <br>
+                <input type="radio" value="Marron">
+                <label>Marrón</label> <br>
+                <input type="radio" value="Verde">
+                <label>Verde</label> <br>
+                <input type="radio" value="Celeste">
+                <label>Celeste</label>
+                <!--radio/checkbox-->
+
+            </label></p>
+        </form>
+    </fieldset>
+    <h1>Tablas</h1>
+    <table border="1">
+        <tr>
+            <th>Nombre</th>
+            <th>Apellidos</th>
+            <th>Web</th>
+            <th>Animales</th>
+            <th>Videojuegos</th>
+        </tr>
+        <tr>
+            <td>Ismael</td>
+            <td>Perez</td>
+            <td>Nestle</td>
+            <td>Perro</td>
+            <td rowspan="2">ps4</td>
+        </tr>
+        <tr>
+            <td>Ismael</td>
+            <td colspan="2">Perez</td>
+            <td>Perro</td>
+        </tr>
+        <tr>
+            <td>Ismael</td>
+            <td>Perez</td>
+            <td>Nestle</td>
+            <td>Perro</td>
+            <td>ps4</td>
+        </tr>
+
+    </table>
+</body>
+</html>
