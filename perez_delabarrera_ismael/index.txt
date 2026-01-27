@@ -1,0 +1,99 @@
+
+Menú
+
+    Introducción a git
+    Encuesta
+    El tiempo
+
+Guía Esencial de Git y GitHub logo de git
+
+Un recurso para aprender semántica HTML mientras aprendes control de versiones.
+Índice de Contenidos
+
+    Introducción a Git
+        Un poco de historia
+        Conceptos Clave
+            Las tres áreas de trabajo
+    Instalación y Configuración
+    Comandos Básicos
+    Glosario de Términos (Lista DL)
+
+Introducción a Git
+
+Git es un sistema de control de versiones distribuido, gratuito y de código abierto, diseñado para manejar todo tipo de proyectos, desde los más pequeños hasta los más grandes, con rapidez y eficiencia.
+Esquema comparativo entre sistemas centralizados y distribuidos
+Fig 1. Diferencia visual entre sistemas centralizados (como SVN) y distribuidos (como Git).
+Un poco de historia
+
+Git nació de la necesidad. Fue creado por Linus Torvalds en 2005 para el desarrollo del kernel de Linux.
+
+    "Soy un bastardo egoísta, y nombro todos mis proyectos por mí mismo. Primero 'Linux', ahora 'Git'."
+    — Linus Torvalds, sobre el origen del nombre.
+
+Conceptos Clave
+
+A diferencia de otros sistemas que guardan cambios como una lista de modificaciones en archivos, Git modela sus datos más como un conjunto de instantáneas (snapshots) de un sistema de archivos en miniatura.
+Las tres áreas de trabajo
+
+Es vital entender que en Git hay tres estados principales en los que pueden estar tus archivos:
+
+    Directorio de trabajo (Working Directory): Donde editas tus archivos.
+    Área de preparación (Staging Area): Donde eliges qué cambios irán en el próximo guardado.
+    Directorio Git (Repository): Donde Git almacena los metadatos y la base de datos de objetos.
+
+Diagrama de flujo de las tres áreas de git
+Fig 2. Flujo de datos entre el directorio de trabajo, el área de preparación y el directorio .git.
+Instalación y Configuración
+
+Antes de empezar, debes configurar tu identidad. Esto es importante porque cada commit utiliza esta información. Ejecuta los siguientes comandos en tu terminal:
+
+
+        git config --global user.name "Juan Perez"
+        git config --global user.email juan@ejemplo.com
+            
+
+Comandos Básicos
+
+A continuación, veremos el flujo de trabajo típico.
+Iniciar un repositorio
+
+Para empezar a controlar una carpeta existente:
+
+git init
+
+Guardar cambios
+
+El ciclo de vida de un cambio es el siguiente:
+
+    Modificas un archivo (ej. index.html).
+    Lo añades al "Stage".
+    Confirmas el cambio (Commit).
+
+El código para realizar esto es:
+
+
+        # Añadir el archivo al área de preparación
+        git add index.html
+
+        # Confirmar el cambio con un mensaje
+        git commit -m "Añadido el encabezado principal"
+            
+
+Glosario de Términos
+
+A continuación se definen los términos técnicos más utilizados en este entorno:
+
+Repository (Repositorio)
+    Colección de archivos y el historial completo de cambios de esos archivos. Puede vivir en tu máquina local o en un servidor remoto (como GitHub).
+Commit
+    Una "foto" o instantánea de tu proyecto en un momento específico. Es la unidad básica de almacenamiento en Git.
+Branch (Rama)
+    Una línea de desarrollo independiente. La rama por defecto suele llamarse main o master.
+Merge (Fusión)
+    El proceso de tomar el contenido de una rama de desarrollo e integrarlo en otra rama.
+
+Contacto
+
+Web: www.gittutorial.org
+
+© 2023 Tutorial de Git. Creado para practicar HTML Semántico.

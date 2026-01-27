@@ -1,0 +1,29 @@
+/* colores css */
+h1 {
+    color: red;
+}
+h1 + p {
+    color: hsl(249, 100%, 68%);
+}
+p {
+    color: chartreuse;
+}
+:nth-child(4) {
+    color: hsl(189, 27%, 37%)
+}
+
+/* medidas */
+h1 {
+    font-size: 3em;
+    margin-left: 1em;
+}
+p {
+    font-size: 80%;
+}
+/* absolutas */
+section h2 {
+    font-size: 1.5cm;
+}
+section p {
+    
+}

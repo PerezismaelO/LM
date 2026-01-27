@@ -1,0 +1,9 @@
+h1 {
+    width: 72%;
+    margin: auto;
+    border: 2px red solid;
+    box-shadow: 20px 10px 5px red;
+    border-radius: 40px;
+    padding: 20px;
+    text-shadow: 4px 2px 2px purple;
+}

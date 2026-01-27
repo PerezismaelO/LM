@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+</head>
+<body>
+    <h1>Menú</h1>
+    <ol>
+        <li><a href="index.html">Introducción a git</a></li>
+        <li><a href="../apellidos_nombre/comercial/encuesta.html">Encuesta</a></li>
+        <li><a href="../apellidos_nombre/soporte/public/tiempo.html">El tiempo</a></li>
+    </ol>
+    <p><h1>Guía Esencial de Git y GitHub</h1> <img src="../apellidos_nombre/aux/logo_git.png" alt="Logo"></p>
+    <p>Un recurso para aprender semántica HTML mientras aprendes control de versiones.</p>
+    <h2>Índice de Contenidos</h2>
+    <ul>
+        <li><a href="">Introducción a Git</a>
+            <ul><li><a href="">Un poco de historia</a></li>
+            <li><a href="">Conceptos Clave</a>
+                <ul><li><a href="">Las tres áreas de trabajo</a></li></ul>
+            </li></ul>
+        </li>
+        <li><a href="">Instalación y Configuración</a></li>
+        <li><a href="">Comandos Básicos</a></li>
+        <li><a href=""> Glosario de Términos (Lista DL)</a></li>
+    </ul>
+    <h2>Introducción a Git</h2>
+    <p>Git es un sistema de control de versiones distribuido, gratuito y de código abierto, diseñado para manejar todo tipo de proyectos, desde los más pequeños hasta los más grandes, con rapidez y eficiencia.</p>
+    <img src="../apellidos_nombre/aux/figuras/white.svg" alt="Diagrama" width="400">
+    <p>Fig 1. Diferencia visual entre sistemas centralizados (como SVN) y distribuidos (como Git).</p>
+
+    
+    <p><h3>Un poco de historia</h3> Git nació de la necesidad. Fue creado por Linus Torvalds en 2005 para el desarrollo del kernel de Linux.</p>
+    <p>      "Soy un bastardo egoísta, y nombro todos mis proyectos por mí mismo. Primero 'Linux', ahora 'Git'."</p>
+    <em>— Linus Torvalds, sobre el origen del nombre.</em>
+
+    
+    <p><h3>Conceptos clave</h3>A diferencia de otros sistemas que guardan cambios como una lista de modificaciones en archivos, Git modela sus datos más como un conjunto de instantáneas (snapshots) de un sistema de archivos en miniatura.</p>
+    <b>Las tres áreas de trabajo</b>
+    <p>Es vital entender que en Git hay tres estados principales en los que pueden estar tus archivos:</p>
+    <ul>
+        <li> <strong>Directorio de trabajo (Working Directory):</strong> Donde editas tus archivos.</li>
+        <li><strong>Área de preparación (Staging Area):</strong> Donde eliges qué cambios irán en el próximo guardado.</li>
+        <li><strong>Directorio Git (Repository):</strong> Donde Git almacena los metadatos y la base de datos de objetos.</li>
+    </ul>
+    <img src="../apellidos_nombre/aux/figuras/areas.svg" alt="Areas">
+    <p>Fig 2. Flujo de datos entre el directorio de trabajo, el área de preparación y el directorio .git.</p>
+
+    <h2>Instalación y Configuración</h2>
+    <p>Antes de empezar, debes configurar tu identidad. Esto es importante porque cada commit utiliza esta información. Ejecuta los siguientes comandos en tu terminal:</p>
+    <p>    git config --global user.name "Juan Perez"</p>
+    <p>    git config --global user.email juan@ejemplo.com</p>
+
+    <h2>Comandos Básicos</h2>
+    <p>A continuación, veremos el flujo de trabajo típico.</p>
+
+    <p><h3>Iniciar un repositorio</h3>Para empezar a controlar una carpeta existente:</p>
+    <p>git init</p>
+
+    <p><h3>Guardar cambios</h3>
+        <ol>
+            <li>Modificas un archivo (ej. index.html).</li>
+            <li>Lo añades al "Stage".</li>
+            <li>Confirmas el cambio (Commit).</li>
+        </ol>
+    </p>
+    <p>El codigo para realizar eso es</p>
+    <p># Añadir el archivo al área de preparación
+        git add index.html</p>
+
+    <p># Confirmar el cambio con un mensaje
+        git commit -m "Añadido el encabezado principal"</p>
+
+    <h2>Glosario de Términos</h2>
+    <h2>Contacto</h2>
+    <p>Web:<a href="www.gittutorial.org">www.gittutorial.org</a></p>
+    <footer>
+        © 2023 Tutorial de Git. Creado para practicar HTML Semántico.
+    </footer>
+
+
+    
+
+
+    
+
+</body>
+</html>

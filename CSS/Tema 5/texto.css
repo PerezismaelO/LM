@@ -1,0 +1,43 @@
+/* texto.css */
+h1 {
+    text-transform: uppercase;
+    text-decoration: line-through turquoise 2px dashed;
+    text-align: center;
+    color: brown;
+    font-size: 1em;
+    font-weight: normal;
+    font-style: italic;
+    border-bottom: 2px red solid;
+}
+
+em {
+    font-weight: bold; /* negrita */
+    font-style: normal;
+}
+
+section#fuentes h2 {
+    font: italic bold 32px monospace;
+}
+
+
+h2 {
+    font-variant: small-caps;
+}
+
+h2 + p {
+    text-transform: uppercase;
+    text-indent: 2em;
+}
+#fuentes p {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: justify;
+}
+
+h2 + p::first-line {
+    background-color: burlywood;
+}
+abbr::after {
+    content: " - " attr(title) " - ";
+    color: blue;
+    font-style: italic
+}

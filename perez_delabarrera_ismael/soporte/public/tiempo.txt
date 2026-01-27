@@ -1,0 +1,18 @@
+
+Menú
+
+    Introducción a git
+    Encuesta
+    El tiempo
+
+El tiempo esta semana
+
+Debe recrear después de la Figura 1 una tabla HTML dónde lo importante es el significado o semántica de los datos, no la presentación.
+el tiempo
+
+Figura 1: figura con la tabla a codificar debajo
+
+    
+      <!-- Aquí DEBAJO debe  aparecer su tabla HTML -->
+    
+  

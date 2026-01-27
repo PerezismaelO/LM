@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta</title>
+</head>
+<body>
+    <h1>Menú</h1>
+    <ol>
+        <li><a href="../index.html">Introducción a git</a></li>
+        <li><a href="encuesta.html">Encuesta</a></li>
+        <li><a href="../soporte/public/tiempo.html">El tiempo</a></li>
+    </ol>
+    <h1>Encuesta de aficionado de las series</h1>
+    <p>Por favor, completa este formulario para ayudarnos a conocer tus gustos televisivos.</p>
+    <fieldset>
+        <legend>Información de contacto</legend>
+        <form>
+            <p><label for="email">Correo electrónico: <br> <input type="email" id="email" placeholder="ejemplo@correo.com">
+            </label></p>
+        </form>
+    </fieldset>
+    <fieldset>
+        <legend>Preferencias de Visionado</legend>
+        <form>
+            <p><label for="time">A qué hora sueles empezar tu maratón de series? (* Obligatorio): <br><input type="time"></label></p>
+
+            <p><label> Selecciona tu género favorito: </label> <br>
+                <select name="género" id="género">
+                    <option value="Ciencia Ficción">Ciencia Ficción</option>
+                    <option value="Drama Criminal"> Drama Criminal</option>
+                    <option value="Comedia / Sitcom">Comedia / Sitcom</option>
+                    <option value="Ciencia Ficción">Ciencia Ficción</option>
+                    <option value="Fantasía Medieval">Fantasía Medieval</option>
+                    <option value="--Elije una opción--"selected disabled>--Elije una opción--</option>
+                </select>
+                 <p>Selecciona la plataforma que más utilizas (solo una):</p>
+                <label><input type="radio" id="Netflix" name="plataforma">Netflix</label> <br>
+                <label><input type="radio" id="HBO" name="plataforma">HBO Max</label> <br>
+                <label><input type="radio" id="Disney" name="plataforma">Disney+</label> <br>
+                <label><input type="radio" id="Amazon" name="plataforma">Amazon Prime Video</label> 
+        </form>
+    </fieldset>
+    <p><button type="submit">Enviar respuestas</button>
+    <button type="reset">Borrar</button></p>
+
+    <aside><h1>Patrocinado, ayuda a esta web</h1>
+       ¿Buscas merchandising de tus series favoritas? ¡Visita FandomStore.com con un 20% de descuento! Banner de tienda de camisetas de series
+        <img src="../aux/figuras/tienda_fandom.svg" alt="Tienda">
+        <p>Ver <a href="FandomStore.com">catálogo completo de FandomStore.com</a></p>
+    </aside>
+</body>
+</html>

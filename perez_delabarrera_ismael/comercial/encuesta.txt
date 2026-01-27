@@ -1,0 +1,37 @@
+
+Menú
+
+    Introducción a git
+    Encuesta
+    El tiempo
+
+Encuesta de Aficionados a las Series
+
+Por favor, completa este formulario para ayudarnos a conocer tus gustos televisivos.
+Información de Contacto
+
+Correo electrónico:
+Preferencias de Visionado
+
+¿A qué hora sueles empezar tu maratón de series? (* Obligatorio):
+
+Selecciona tu género favorito:
+    Ciencia Ficción
+    Drama Criminal
+    Comedia / Sitcom
+    Fantasía Medieval
+
+
+Selecciona la plataforma que más utilizas (solo una):
+    Netflix
+    HBO Max
+    Disney+
+    Amazon Prime Video
+
+
+Patrocinado, ayuda a esta web
+
+¿Buscas merchandising de tus series favoritas? ¡Visita FandomStore.com con un 20% de descuento!
+Banner de tienda de camisetas de series
+
+Ver catálogo completo de FandomStore.com
