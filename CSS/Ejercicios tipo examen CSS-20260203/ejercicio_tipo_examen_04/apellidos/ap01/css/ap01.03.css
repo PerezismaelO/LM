@@ -1,0 +1,44 @@
+@media screen and (min-width: 562px) {
+    #container {
+        background-color: yellow;
+        display: grid;
+        gap: 1em;
+        border: none;
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas: 
+        "nav      aside"
+        "header   aside"
+        "article  article"
+        "section  section";
+    }
+}
+header {
+    grid-area: header;
+}
+nav {
+    grid-area: nav;
+}
+section {
+    grid-area: section;
+}
+article {
+    grid-area: article;
+}
+aside {
+    grid-area: aside;
+}
+
+@media screen and (min-width: 960px) {
+    #container {
+        background-color: lightcoral;
+        grid-template-columns: 1fr 1fr 2fr;
+        grid-template-areas: 
+        "aside nav nav"
+        "aside header article"
+        "section section article";
+    }
+    nav l {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+}

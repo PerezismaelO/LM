@@ -1,0 +1,39 @@
+/* apartado1.css */
+@font-face {
+    font-family: Pacifico;
+    src: url("../fuentes/Pacifico/Pacifico-Regular.ttf");
+}
+h1 {
+    font-family: "Pacifico", serif;
+    text-align: right;
+    border-bottom: 2px solid black;
+}
+/*La cita */
+cite::before{
+    content: "Autor: ";
+    font-weight: bold;
+}
+
+blockquote::before{
+    content: "Cita: ";
+    font-weight: bold;
+}
+
+blockquote{
+    font-style: italic;
+    width: 90%;
+    border: dashed red 3px;
+    border-radius: 20px;
+    padding: 2em;
+    box-shadow: 20px 10px 5px red;
+    margin-left: 0;
+    margin-right: 18em;
+}
+/* Cuando lo toque se pone en verde */
+/*footer ol li:hover*/ footer ol li:nth-child(even){
+    background-color: olive;
+}
+
+footer ol{
+    display:  ;
+}

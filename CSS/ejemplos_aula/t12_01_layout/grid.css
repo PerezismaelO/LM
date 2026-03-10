@@ -58,10 +58,11 @@ footer {
     - nav justo debajo de header, ocupa una celda 
     */
 
-/* footer {
+footer {
   grid-row: 1;
   grid-column: 1 / span 3;
 }
+
 header {
   grid-column: 1;
   grid-row: 2 ;
