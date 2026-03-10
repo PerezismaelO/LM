@@ -1,0 +1,64 @@
+#contenedor > *{
+    border: red 4px dashed;
+}
+
+#contenedor > *:before{
+    content: "Hijo del contenedor";
+    background-color: yellow;
+}
+
+@media screen and (min-width: 600px) {
+    #contenedor{
+        background-color: orange;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "aside nav"
+        "header header"
+        "article article"
+        "footer footer";
+    }
+    aside {
+        grid-area: aside;
+    }
+    nav {
+        grid-area: nav;
+    }
+    header {
+        grid-area: header;
+    }
+    article {
+        grid-area: article;
+    }
+    footer {
+        grid-area: footer;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    #contenedor {
+        background-color: lightcyan;
+    }
+    article {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    article h2 {
+        grid-column: 1/span2;
+        border-bottom: 2px solid blue;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    #contenedor {
+        background-color: lightsalmon;
+        width: 80%;
+        margin: auto;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+        "nav footer footer"
+        "nav header aside"
+        "article article aside";
+    }
+}
